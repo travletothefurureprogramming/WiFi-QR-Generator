@@ -37,11 +37,38 @@ For qr code generation:
 
 1. Enter the SSID
 
+![SSID](assets/image.png)
+
 2. Enter password
+
+![PASSWORD](assets/image-1.png)
+
 Note: The WiFi password is entered securely and is hidden while typing. Although no characters are displayed on the screen, your input is still being recorded correctly.
+
+3. Select Security Type 
+
+![Security Type](assets/image-2.png)
+
+4. Select qr code size
+
+![Size](assets/image-3.png)
+
+5. The qr code will be saved and it will open in your's computer gallery
+
+![Image Opened](assets/image-4.png)
+
+### GUI APP
+
+![App](assets/image-5.png)
+
+1. Enter the SSID
+
+2. Enter password
 
 3. Select Security Type 
 
 4. Select qr code size
 
-5. The qr code will be saved and it will open in your's computer gallery
+5. Select if you want to print it (Beta and for now only for windows)
+
+6. Press Generate

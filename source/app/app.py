@@ -9,8 +9,11 @@ import win32print
 import os
 
 
-password_showed = False
-
+def toggle_password():
+    if show_check_box.get() == 1:
+        password_entry.configure(show="")
+    else:
+        password_entry.configure(show="*")
 
 def generate_qr_code():
     size = size_dropdown.get()
@@ -110,7 +113,11 @@ password_label.pack(pady=2)
 password_entry = ctk.CTkEntry(app,show="*")
 password_entry.pack(pady=2)
 
-show_check_box = ctk.CTkCheckBox(app,text="Show Password")
+show_check_box = ctk.CTkCheckBox(
+    app,
+    text="Show Password",
+    command=toggle_password
+)
 show_check_box.pack(pady=2)
 
 security_label = ctk.CTkLabel(app,text="SECURITY TYPE")
