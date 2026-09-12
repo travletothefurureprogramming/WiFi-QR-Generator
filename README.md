@@ -1,74 +1,80 @@
 # WiFi QR Generator
 
-A simple and efficient utility to generate QR codes for your WiFi network, allowing guests to connect instantly by scanning the code with their smartphones. This project comes in two versions: a Command Line Interface (CLI) and a Graphical User Interface (GUI).
+A small tool for creating QR codes for WiFi networks. You can use it either from the terminal with the CLI version or through the desktop GUI.
 
 ## Features
 
-- **Dual Versions:** 
-  - **CLI:** Fast, terminal-based generator for quick use.
-  - **GUI:** Built with `CustomTkinter` for a modern, user-friendly desktop experience.
-- **Save Location:** Choose exactly where you want to save the generated QR code image on your device.
-- **Show/Hide Password:** Option to toggle password visibility within the GUI for convenience and security.
-- **Robust Error Handling:** Built-in validation to prevent crashes and ensure smooth generation.
-- **Print Option:** Integrated printing capabilities (currently in beta/development).
+* **CLI and GUI versions**
 
-## Development Changelog (Devlogs)
-
-* **Update 4:** Added comprehensive error handling and input validation.
-* **Update 3:** Implemented password visibility toggle, custom save directory selection for the QR code, and initial print integration.
-* **Update 2:** Designed and developed the modern desktop GUI using `CustomTkinter`.
-* **Update 1:** Created the core WiFi QR generator logic operating via the terminal (CLI).
+  * CLI for generating QR codes directly from the terminal.
+  * GUI built with `CustomTkinter`.
+* Choose where the generated QR code should be saved.
+* Show or hide the WiFi password in the GUI.
+* Input validation and error handling.
+* Printing support is included, but is still in beta.
 
 ## Getting Started
 
-1. Download the github release wich contains .exe programms for both CLI and GUI app
-2. Open the .exe you want and start generate
+1. Download the latest GitHub release. It includes the `.exe` files for both the CLI and GUI versions.
+2. Run the version you want to use.
+3. Enter your WiFi details and generate the QR code.
 
-## How to use it
+## How to Use
+
 ### CLI
 
-* Select what you want to do:
-  - Generate QR code (To generate a new qr code)
-  - View history (To view previous generations)
-  - Delete history (To delete the current history)
-  - Exit (To exit)
+When you start the CLI, you can choose between:
 
-For qr code generation:
+* **Generate QR code** — Create a new WiFi QR code.
+* **View history** — View previously generated QR codes.
+* **Delete history** — Clear the saved generation history.
+* **Exit** — Close the program.
 
-1. Enter the SSID
+### Generating a QR Code
+
+#### 1. Enter the SSID
 
 ![SSID](assets/image.png)
 
-2. Enter password
+Enter the name of your WiFi network.
+
+#### 2. Enter the password
 
 ![PASSWORD](assets/image-1.png)
 
-Note: The WiFi password is entered securely and is hidden while typing. Although no characters are displayed on the screen, your input is still being recorded correctly.
+Enter the WiFi password.
 
-3. Select Security Type 
+The password is hidden while typing, so it won't appear on the terminal screen.
+
+#### 3. Select the security type
 
 ![Security Type](assets/image-2.png)
 
-4. Select qr code size
+Choose the security type used by your network.
+
+#### 4. Select the QR code size
 
 ![Size](assets/image-3.png)
 
-5. The qr code will be saved and it will open in your's computer gallery
+Choose the size of the QR code.
+
+#### 5. QR code generated
 
 ![Image Opened](assets/image-4.png)
 
-### GUI APP
+After generation, the QR code is saved and opened automatically.
+
+## GUI
 
 ![App](assets/image-5.png)
 
-1. Enter the SSID
+The GUI follows the same basic process:
 
-2. Enter password
+1. Enter the SSID.
+2. Enter the WiFi password.
+3. Select the security type.
+4. Choose the QR code size.
+5. Choose whether to print the QR code.
+6. Press **Generate**.
 
-3. Select Security Type 
-
-4. Select qr code size
-
-5. Select if you want to print it (Beta and for now only for windows)
-
-6. Press Generate
+> The print option is currently in beta and, for now, only works on Windows.
